@@ -44,7 +44,10 @@ public class FizzBuzzSolution {
     		}else
     		return "buzz";
     	}else if(number>10 && hasIdenticalDigits.test(number)) {
-    		return "deluxe";
+    			if(number%2==0)
+    				return "deluxe";
+    			else
+    				return "fake deluxe";
     	}
     		
     		return number.toString();
@@ -63,4 +66,5 @@ public class FizzBuzzSolution {
 
 
 }
+
 
