@@ -21,17 +21,26 @@ public class FizzBuzzSolution {
     	};
     	if(((number%3==0) || number.toString().contains("3")) && ((number%5==0)||number.toString().contains("5"))) {
     		if(number>10 && hasIdenticalDigits.test(number)) {
-    			return "fizz buzz deluxe";
+    			if(number%2==0)
+    				return "fizz buzz deluxe";
+    			else
+    				return "fizz buzz fake deluxe";
     		}else {
     		return "fizz buzz";}
     }	else if((number%3==0) || number.toString().contains("3")) {
     		if(number>10 && hasIdenticalDigits.test(number)) {
-    			return "fizz deluxe";
+    			if(number%2==0)
+    				return "fizz deluxe";
+    			else
+    				return "fizz fake deluxe";
     		}else
     		return "fizz";
     	}else if((number%5==0) || number.toString().contains("5")) {
     		if(number>10&& hasIdenticalDigits.test(number)) {
-    			return "buzz deluxe";
+    			if(number%2==0)
+    				return "buzz deluxe";
+    			else
+    				return "buzz fake deluxe";
     		}else
     		return "buzz";
     	}else if(number>10 && hasIdenticalDigits.test(number)) {
@@ -54,3 +63,4 @@ public class FizzBuzzSolution {
 
 
 }
+
