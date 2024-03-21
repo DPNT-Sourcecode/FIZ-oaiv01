@@ -18,7 +18,7 @@ public class FizzBuzzSolution {
     		return "fizz";
     	}else if((number%5==0) && number.toString().contains("5")) {
     		return "buzz";
-    	}else return "";
+    	}else return number.toString();
        // throw new SolutionNotImplementedException();
     }
     public String fizz_buzz(Integer number) {
@@ -34,5 +34,6 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
