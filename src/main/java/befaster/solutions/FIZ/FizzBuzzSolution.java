@@ -19,14 +19,14 @@ public class FizzBuzzSolution {
 //    		char firstDigit=numberString.charAt(0);
 //    		return numberString.chars().allMatch(digit->digit==firstDigit);
 //    	};
-    	if(((number%3==0) && number.toString().contains("3")) && ((number%5==0)&&number.toString().contains("5"))) {
+    	if(((number%3==0) || number.toString().contains("3")) && ((number%5==0)||number.toString().contains("5"))) {
+    		if(((number%3==0) && number.toString().contains("3")) || ((number%5==0)||number.toString().contains("5"))) {
 			if(number%2==0) {
 						return "fizz buzz deluxe";}
 					else {
 						return "fizz buzz fake deluxe";}
-	  }else if(((number%3==0) || number.toString().contains("3")) && ((number%5==0)||number.toString().contains("5"))) {
-				return "fizz buzz";}
-       else if((number%3==0) && number.toString().contains("3")) {
+    		}else return "fizz buzz";
+    	} else if((number%3==0) && number.toString().contains("3")) {
 			if(number%2==0) {
 				return "fizz deluxe";}
 			else {
@@ -64,4 +64,5 @@ public class FizzBuzzSolution {
 
 
 }
+
 
