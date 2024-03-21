@@ -12,11 +12,11 @@ public class FizzBuzzSolution {
 //    	}else if(number%5==0) {
 //    		return "buzz";
 //    	}else return number.toString();
-    	if((number%3==0) && number.toString().contains("3") && (number%5==0)&&number.toString().contains("5")) {
+    	if(((number%3==0) || number.toString().contains("3")) && ((number%5==0)||number.toString().contains("5"))) {
     		return "fizz buzz";}
-    	else if((number%3==0) && number.toString().contains("3")) {
+    	else if((number%3==0) || number.toString().contains("3")) {
     		return "fizz";
-    	}else if((number%5==0) && number.toString().contains("5")) {
+    	}else if((number%5==0) || number.toString().contains("5")) {
     		return "buzz";
     	}else return number.toString();
        // throw new SolutionNotImplementedException();
@@ -34,6 +34,7 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
 
